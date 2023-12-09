@@ -1,0 +1,230 @@
+:root{
+    --light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+}
+
+.container{
+    display: flex;
+    width: 735px;
+    box-shadow: 0 16px 32px 0.7em hsl(221, 100%, 96%); ;
+    border-radius: 30px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:50%;
+    background-image: linear-gradient(hsl(252, 100%, 67%) , hsl(241, 81%, 54%));
+    border-radius: 30px;
+    padding: 40px;
+}
+.left h3{
+    text-align: center;
+    /* padding-top: 20px; */
+    color:hsl(241, 100%, 89%);
+    font-size: 24px;
+
+}
+.num{
+    padding: 20px;
+    margin: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1) , hsla(241, 72%, 46%, 0));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.num h1{
+    font-weight: 800;
+    font-size: 68px;
+    margin-top:10px;
+    position: relative;
+    top: 10px;
+
+}
+.num p{
+    color: hsl(241, 100%, 89%);
+
+
+
+}
+.left h2{
+    color: white;
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 800;
+
+}
+.left p {
+    line-height: 1.6;
+    color: hsl(241, 100%, 89%);
+    text-align: center;
+    font-size: 18px;
+    width: 87%;
+}
+.right{
+    width: 50%;
+    border-radius: 25px;
+    background-color: hsla(241, 72%, 46%, 0);
+    padding: 40px;
+}
+.nav{
+    margin-top: 23px;
+    margin-bottom: 23px;
+
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color:hsla(0, 100%, 67%, 0.06); 
+    margin-bottom: 15px;
+    border-radius: 8px;
+    align-items: center;
+}
+.box .first h4{
+    display: inline-block;
+    color: hsla(0, 100%, 67%);
+    margin-left: 10px;
+    font-size: 18px;
+}
+.box .second h2{
+    font-size: 18px;
+}
+
+.box .second h2 span{
+    color: rgba(0, 0, 0,.4);
+}
+
+.box .first img{
+    position: relative;
+    top: 3px;
+}
+.box2{
+    background-color: hsla(39, 100%, 56%, 0.06);
+}
+.box2 .first h4{
+    color: hsl(39, 100%, 56%);
+}
+.box3{
+    background-color:hsla(166, 100%, 37% ,0.06);
+}
+.box3 .first h4{
+    color: hsl(166, 100%, 37%)
+}
+.box4{
+    background-color: hsla(234, 85%, 45%, 0.06);
+}
+.box4 .first h4{
+    color: hsl(234, 85%, 45%);
+}
+.continue{
+    margin-top: 40px;
+}
+.continue button{
+    padding:18px;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    color:white ;
+    background-color: hsl(224, 30%, 27%) ;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+.continue button:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%) , hsl(241, 81%, 54%));
+}
+footer{
+    height: 3vh;
+}
+footer span{
+    display: block;
+}
+.attribution{
+    font-size: 10px;
+    margin-left: 5px;
+    text-align: center;
+    max-width: 100%;
+}
+@media (max-width:680px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        border-radius:0;
+        box-shadow: none;
+    }
+    .left , .right{
+        width: auto;
+    }
+    .left{
+        padding-top:27px ;
+        padding-bottom: 30px;
+        border-radius: 0 0 30px 30px;
+    }
+    .right {
+        padding-top:27px;
+        padding-bottom:30px ;
+    }
+    main{
+        height: fit-content;
+    }
+    .continue{
+        margin-top:32px;
+    }
+    .num{
+        margin: 20px;
+        width: 190px;
+        height: 190px;
+
+    }
+}
+@media(max-width:407px){
+    .left{
+        padding-top:25px ;
+        padding-bottom: 30px;
+    }
+    .continue{
+        margin-top:15px;
+    }
+    .right {
+        padding-top:20px;
+        padding-bottom:20px ;
+    }
+}
+@media (max-width:320px){
+    .right {
+        padding-top:20px;
+        padding-bottom:20px ;
+    }
+    .num{
+        width: 187px;
+        height: 187px;
+    }
+    body{
+        overflow: hidden;
+    }
+
+}
